@@ -1,12 +1,15 @@
 (() => {
     const root = document.documentElement;
+    const isChinese = root.lang.toLowerCase().startsWith('zh');
     const toggle = document.querySelector('.theme-toggle');
     if (toggle) {
         const applyTheme = (theme) => {
             root.dataset.theme = theme;
             const dark = theme === 'dark';
-            toggle.textContent = dark ? '浅色' : '深色';
-            toggle.setAttribute('aria-label', dark ? '切换为浅色模式' : '切换为深色模式');
+            toggle.textContent = isChinese ? (dark ? '浅色' : '深色') : (dark ? 'Light' : 'Dark');
+            toggle.setAttribute('aria-label', isChinese
+                ? (dark ? '切换为浅色模式' : '切换为深色模式')
+                : (dark ? 'Switch to light mode' : 'Switch to dark mode'));
             toggle.setAttribute('aria-pressed', String(dark));
             document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#171d24' : '#ffffff');
         };
@@ -20,6 +23,16 @@
             try { localStorage.setItem('guangyu-theme', theme); } catch (_) { /* Theme works without persistence. */ }
         });
     }
+
+    const languageLink = document.querySelector('.language-link');
+    const syncLanguageAnchor = () => {
+        if (!languageLink) return;
+        const destination = new URL(languageLink.href);
+        destination.hash = window.location.hash;
+        languageLink.href = destination.href;
+    };
+    syncLanguageAnchor();
+    window.addEventListener('hashchange', syncLanguageAnchor);
 
     const links = [...document.querySelectorAll('.main-nav a[href^="#"]')];
     const sections = links.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean);

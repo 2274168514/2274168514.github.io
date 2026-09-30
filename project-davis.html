@@ -1,89 +1,95 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="孙光宇参与的 DAVIS 交通感知系统：融合红外与可见光感知、交通行为识别和法规知识问答。">
-    <title>DAVIS 交通感知系统 | 孙光宇</title>
-    <link rel="stylesheet" href="css/pages.css">
+    <meta name="description" content="Guangyu Sun's work on DAVIS, a traffic perception system combining infrared and visible-light sensing, traffic behavior recognition, and questions and answers about traffic regulations.">
+    <title>DAVIS Traffic Perception System | Guangyu Sun</title>
+    <link rel="stylesheet" href="css/pages.css?v=20260930-en">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="alternate" hreflang="en" href="https://2274168514.github.io/project-davis.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://2274168514.github.io/zh/project-davis.html">
 </head>
 <body>
-    <a class="skip-link" href="#main">跳至正文</a>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
         <div class="page-container header-inner">
-            <a class="site-name" href="index.html">孙光宇 <span>Guangyu Sun</span></a>
-            <a href="index.html#projects">返回首页</a>
+            <a class="site-name" href="index.html">Guangyu Sun</a>
+            <div class="header-actions">
+                <a href="index.html#projects">Back to home</a>
+                <a class="language-link" href="zh/project-davis.html" lang="zh-CN" hreflang="zh-CN">中文</a>
+            </div>
         </div>
     </header>
     <main id="main" class="page-container">
         <div class="page-heading">
             <p class="eyebrow">Selected project</p>
-            <h1>DAVIS 交通感知系统</h1>
-            <p class="lead">穿云破雾——双光与 AI 驱动的天地协同道路交通感知系统</p>
-            <p class="page-meta">2025 全国大学生数字媒体科技作品及创意竞赛 · 全国总决赛一等奖</p>
+            <h1>DAVIS Traffic Perception System</h1>
+            <p class="lead">Through Clouds and Fog: an air–ground road traffic perception system powered by visible and infrared sensing and AI.</p>
+            <p class="page-meta">2025 National College Student Digital Media Technology Works and Creativity Competition · First Prize, National Finals</p>
             <div class="inline-links">
-                <a href="http://8.221.99.246:2778/" target="_blank" rel="noopener noreferrer">访问在线演示</a>
-                <a href="#materials">查看项目材料</a>
+                <a href="http://8.221.99.246:2778/" target="_blank" rel="noopener noreferrer">Live demo</a>
+                <a href="#materials">Project materials</a>
             </div>
         </div>
         <section class="content-section" aria-labelledby="background-title">
-            <h2 id="background-title">项目背景</h2>
+            <h2 id="background-title">Background</h2>
             <div class="prose">
-                <p>雨雾、夜间等低能见度场景给道路监测带来挑战。项目融合红外与可见光感知，通过图像增强、目标检测与多模态融合算法，识别车辆与道路情况，并将检测结果组织为可视化交通监测系统。</p>
-                <p>系统围绕交通异常事件、车辆目标与行为分析，结合大模型和法规知识库，提供从感知识别到信息解释的支持。</p>
+                <p>Rain, fog, and low light make road monitoring challenging. This project combines infrared and visible-light sensing with image enhancement, object detection, and multimodal fusion to identify vehicles and road conditions, presenting the results in a visual traffic monitoring system.</p>
+                <p>The system analyzes traffic incidents, vehicles, and behavior. It combines large language models with a traffic regulation knowledge base to support both perception and interpretation.</p>
             </div>
         </section>
         <section class="content-section" aria-labelledby="contribution-title">
-            <h2 id="contribution-title">我的贡献</h2>
+            <h2 id="contribution-title">My Contributions</h2>
             <div class="prose">
-                <p>负责 AI 模块的设计与实现，主要工作包括：</p>
+                <p>I designed and implemented the AI modules, with two main responsibilities:</p>
                 <ul>
-                    <li>构建交通违章行为识别模型，实现闯红灯、逆行、违规变道等行为的自动检测。</li>
-                    <li>基于交通法规构建知识库，设计智能问答模块，支持违章类型、处罚标准与法规依据的查询和解释。</li>
+                    <li>Built a traffic violation recognition model to automatically detect behaviors such as running red lights, driving against traffic, and making illegal lane changes.</li>
+                    <li>Built a knowledge base from traffic regulations and designed a question-answering module to explain violation categories, penalties, and the relevant regulations.</li>
                 </ul>
             </div>
         </section>
         <section class="content-section" aria-labelledby="system-title">
-            <h2 id="system-title">系统组成</h2>
+            <h2 id="system-title">System Components</h2>
             <div class="feature-grid">
                 <article>
-                    <h3>双光融合感知</h3>
-                    <p>通过可见光与红外热成像互补，面向夜间、雨雾等复杂场景开展目标检测与图像增强。</p>
-                    <p class="technology">Python · OpenCV · 双光融合</p>
+                    <h3>Visible–Infrared Fusion</h3>
+                    <p>Combines visible-light and thermal infrared imaging for object detection and image enhancement at night and in rain or fog.</p>
+                    <p class="technology">Python · OpenCV · Visible–infrared fusion</p>
                 </article>
                 <article>
-                    <h3>行为识别与问答</h3>
-                    <p>结合目标检测、轨迹分析与大模型语义理解，对交通行为进行识别，并关联法规知识。</p>
-                    <p class="technology">YOLO · DeepSeek · 知识库</p>
+                    <h3>Behavior Recognition &amp; Q&amp;A</h3>
+                    <p>Combines object detection, trajectory analysis, and language model interpretation to recognize traffic behavior and connect it with relevant regulations.</p>
+                    <p class="technology">YOLO · DeepSeek · Knowledge base</p>
                 </article>
                 <article>
-                    <h3>可视化展示</h3>
-                    <p>汇集感知结果与分析信息，为交通事件、车辆目标及行为提供直观的展示入口。</p>
+                    <h3>Visualization</h3>
+                    <p>Brings perception results and analysis together in a visual interface for traffic incidents, vehicles, and behavior.</p>
                     <p class="technology">Vue.js · WebGIS · ECharts</p>
                 </article>
             </div>
         </section>
         <section id="materials" class="content-section" aria-labelledby="materials-title">
-            <h2 id="materials-title">项目材料</h2>
+            <h2 id="materials-title">Project Materials</h2>
             <div class="figure-grid">
                 <figure>
-                    <a href="assets/images/project-davis.png" target="_blank" rel="noopener noreferrer" aria-label="查看完整项目说明截图">
-                        <img src="assets/images/project-davis.png" alt="DAVIS 项目说明截图，包含项目简介、核心特点与系统架构" loading="lazy" width="1302" height="885">
+                    <a href="assets/images/project-davis.png" target="_blank" rel="noopener noreferrer" aria-label="View the full project overview image">
+                        <img src="assets/images/project-davis.png" alt="DAVIS project overview in Chinese, including its introduction, key features, and system architecture" loading="lazy" width="1302" height="885">
                     </a>
-                    <figcaption>项目说明截图 · 点击查看原图</figcaption>
+                    <figcaption>Project overview (Chinese) · Click to view full size</figcaption>
                 </figure>
                 <figure>
-                    <a href="assets/proofs/competition/digital-media-first.jpg" target="_blank" rel="noopener noreferrer" aria-label="查看全国总决赛一等奖证书">
-                        <img src="assets/proofs/competition/digital-media-first.jpg" alt="2025 全国大学生数字媒体科技作品及创意竞赛全国总决赛一等奖证书" loading="lazy" width="3508" height="2481">
+                    <a href="assets/proofs/competition/digital-media-first.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the national finals first-prize certificate">
+                        <img src="assets/proofs/competition/digital-media-first.jpg" alt="First-prize certificate from the national finals of the 2025 National College Student Digital Media Technology Works and Creativity Competition" loading="lazy" width="3508" height="2481">
                     </a>
-                    <figcaption>全国总决赛一等奖证书 · 点击查看原图</figcaption>
+                    <figcaption>First Prize, National Finals · Click to view full size</figcaption>
                 </figure>
             </div>
         </section>
     </main>
     <footer class="site-footer page-container">
-        <p>&copy; 2026 孙光宇</p>
-        <a href="index.html#projects">返回代表项目</a>
+        <p>&copy; 2026 Guangyu Sun</p>
+        <a href="index.html#projects">Back to selected projects</a>
     </footer>
 </body>
 </html>

@@ -116,6 +116,30 @@ summary:hover, details[open] > summary { color: var(--blue); }
 .footer p > span { margin: 0 6px; }
 .footer > div { display: flex; gap: 20px; }
 .footer a { color: var(--muted); }
+.nav-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.language-link { color: var(--blue); font-size: 12px; white-space: nowrap; }
+.education-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 5px 16px; }
+.education-entry > p { font-size: 14px; margin: 0 0 15px; }
+.education-facts { margin: 0; font-size: 13px; display: grid; gap: 7px; }
+.education-facts > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 14px; }
+.education-facts dt { color: var(--muted); }
+.education-facts dd { margin: 0; }
+.experiment-results { margin: 18px 0; }
+.work-content .results-caption { font-size: 12px; font-weight: 600; color: var(--heading); }
+.result-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; margin: 10px 0; padding: 15px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.result-grid dt { color: var(--text); font-size: 12px; line-height: 1.6; }
+.result-grid dd { margin: 5px 0 1px; font-size: 23px; line-height: 1.4; color: var(--heading); font-weight: 600; }
+.result-grid small { display: block; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.project-contributions { margin-top: 17px; }
+.project-contributions h4 { font-size: 13px; font-weight: 600; color: var(--heading); margin: 0 0 7px; }
+.project-contributions ul { padding-left: 19px; margin: 0; font-size: 13px; }
+.project-contributions li + li { margin-top: 5px; }
+.award-year { font-size: 11px; color: var(--muted); padding-top: 2px; }
+html[lang="en"] .profile h1 { letter-spacing: -.5px; font-size: 28px; }
+html[lang="en"] .english-name { font-family: inherit; font-size: 18px; letter-spacing: 2px; }
+html[lang="en"] .profile-note { font-size: 11px; line-height: 1.7; }
+html[lang="en"] .skill-list > div { grid-template-columns: 94px minmax(0, 1fr); }
+html[lang="en"] .document-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (min-width: 1440px) { .page-wrapper { gap: 85px; } }
 @media (max-width: 1050px) { .page-wrapper { width: calc(100% - 56px); grid-template-columns: 212px minmax(0, 1fr); gap: 40px; } .work-item { grid-template-columns: 138px minmax(0, 1fr); gap: 18px; } .main-nav { gap: 20px; } .work-meta { gap: 7px; } }
 @media (max-height: 760px) and (min-width: 781px) { .sidebar { position: static; } }
@@ -168,4 +192,20 @@ summary:hover, details[open] > summary { color: var(--blue); }
     .footer { font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* Longer English labels scroll without pushing language controls off screen. */
+.main-nav { min-width: 0; overflow-x: auto; scrollbar-width: none; gap: 19px; padding: 5px 0; justify-content: flex-start; }
+.main-nav::-webkit-scrollbar { display: none; }
+.main-nav a { flex-shrink: 0; }
+.main-nav a.active::after { bottom: -3px; }
+.nav-shell { gap: 16px; padding-block: 8px; }
+@media (max-width: 480px) {
+    .nav-actions { gap: 9px; }
+    .language-link { font-size: 11px; }
+    .main-nav { gap: 17px; }
+    .nav-shell { gap: 12px; }
+    .education-facts > div { grid-template-columns: 85px minmax(0, 1fr); gap: 10px; }
+    html[lang="en"] .profile h1 { font-size: 24px; }
+    html[lang="en"] .document-list { grid-template-columns: 1fr; }
+    html[lang="en"] .skill-list > div { grid-template-columns: 85px minmax(0, 1fr); gap: 10px; }
+}
 @media print { .page-wrapper { display: block; width: 100%; } .sidebar { position: static; margin: 0 0 25px; } .nav-shell, .theme-toggle, .skip-link { display: none; } .profile { text-align: left; } .avatar { float: right; width: 100px; height: 100px; } .contact, .profile-facts { display: flex; flex-direction: row; gap: 20px; border: 0; } .cv-link, .profile-note, .affiliation-en { display: none; } .section { break-inside: avoid; } body { font-size: 11pt; } }

@@ -27,6 +27,8 @@ p, h1, h2, h3, figure { margin: 0; }
 .site-header { border-bottom: 1px solid var(--line); }
 .header-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .header-inner > a:last-child { font-size: 14px; flex-shrink: 0; }
+.header-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 22px; font-size: 14px; }
+.header-actions .language-link { font-size: 13px; white-space: nowrap; }
 .site-name { font-size: 19px; font-weight: 650; color: var(--text); }
 .site-name span { margin-left: 10px; color: var(--muted); font-size: 14px; font-weight: 400; }
 .page-heading { padding-block: 58px 36px; max-width: 920px; }
