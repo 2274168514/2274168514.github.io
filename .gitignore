@@ -1,0 +1,10 @@
+.local-backup/
+.qa/
+node_modules/
+__pycache__/
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example

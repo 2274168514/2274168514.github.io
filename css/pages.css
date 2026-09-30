@@ -1,0 +1,80 @@
+﻿:root {
+    color-scheme: light;
+    --text: #303840;
+    --muted: #69737c;
+    --link: #245b85;
+    --line: #e3e7eb;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    background: #fff;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+a { color: var(--link); text-decoration: none; text-underline-offset: 4px; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
+img { display: block; max-width: 100%; height: auto; }
+p, h1, h2, h3, figure { margin: 0; }
+.page-container { width: min(1120px, calc(100% - 80px)); margin-inline: auto; }
+.skip-link { position: absolute; left: 20px; top: -100px; padding: 8px 14px; background: #fff; z-index: 10; }
+.skip-link:focus { top: 12px; }
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.header-inner > a:last-child { font-size: 14px; flex-shrink: 0; }
+.site-name { font-size: 19px; font-weight: 650; color: var(--text); }
+.site-name span { margin-left: 10px; color: var(--muted); font-size: 14px; font-weight: 400; }
+.page-heading { padding-block: 58px 36px; max-width: 920px; }
+.eyebrow { color: var(--muted); font-size: 13px; letter-spacing: 0.1em; margin-bottom: 12px; }
+h1 { color: #222d36; font-size: clamp(28px, 3.5vw, 38px); line-height: 1.4; font-weight: 650; letter-spacing: -0.025em; }
+.lead { font-size: 18px; line-height: 1.8; margin-top: 17px; }
+.page-meta { font-size: 14px; color: var(--muted); margin-top: 15px; }
+.inline-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 21px; font-size: 15px; }
+.content-section { padding-block: 29px 35px; border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+h2 { font-size: 23px; font-weight: 600; line-height: 1.5; margin-bottom: 20px; }
+h3 { font-size: 17px; font-weight: 600; line-height: 1.65; }
+.prose { max-width: 900px; }
+.prose p + p { margin-top: 14px; }
+.prose ul { margin: 12px 0 0; padding-left: 22px; }
+.prose li + li { margin-top: 9px; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
+.feature-grid p { margin-top: 11px; }
+.technology { font-size: 13px; color: var(--muted); }
+.figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 30px; }
+.figure-grid img { width: 100%; border: 1px solid var(--line); }
+.figure-grid figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 28px; }
+.video-item { min-width: 0; }
+.video-item h3 { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 14px; margin-bottom: 11px; }
+.video-item h3 span { color: var(--muted); font-size: 13px; font-weight: 400; }
+.video-item video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111820; object-fit: contain; }
+.media-link { display: inline-block; font-size: 13px; margin-top: 8px; }
+.entry { display: grid; grid-template-columns: 135px minmax(0, 1fr); gap: 24px; padding-block: 24px; border-bottom: 1px solid var(--line); }
+.entry:first-child { padding-top: 0; }
+.entry:last-child { border-bottom: 0; padding-bottom: 0; }
+.entry-label { color: var(--muted); font-size: 14px; padding-top: 2px; }
+.entry h3 { font-size: 19px; }
+.entry h3 + p { margin-top: 7px; color: var(--muted); font-size: 15px; }
+.site-footer { border-top: 1px solid var(--line); margin-top: 40px; padding-block: 24px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 760px) {
+    .page-container { width: calc(100% - 40px); }
+    .header-inner { min-height: 72px; gap: 18px; }
+    .site-name span { display: none; }
+    .page-heading { padding-block: 36px 28px; }
+    .lead { font-size: 17px; }
+    .content-section { padding-block: 25px 30px; }
+    .feature-grid, .figure-grid, .video-grid { grid-template-columns: 1fr; gap: 28px; }
+    .feature-grid article + article { border-top: 1px solid var(--line); padding-top: 24px; }
+    .entry { grid-template-columns: 1fr; gap: 5px; }
+    h2 { font-size: 22px; }
+    .site-footer { margin-top: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240" role="img" aria-labelledby="title desc">
+  <title id="title">Academic planning concept diagram</title>
+  <desc id="desc">A language model and knowledge graph support academic planning. This original illustration conveys the broad project idea without specifying an implementation or claiming research results.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="m1 1 5 3-5 3" fill="none" stroke="#92a9bc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="360" height="240" rx="12" fill="#f4f7fa"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="180" y="33" font-size="21" font-weight="700" fill="#245b85">Learning pathways</text>
+    <g fill="#e3edf5" stroke="#bfd0df" stroke-width="1.5">
+      <rect x="36" y="57" width="117" height="79" rx="12"/>
+      <rect x="207" y="57" width="117" height="79" rx="12"/>
+    </g>
+    <path d="M81 73h28a5 5 0 0 1 5 5v13a5 5 0 0 1-5 5H94l-10 7v-7h-3a5 5 0 0 1-5-5V78a5 5 0 0 1 5-5z" fill="#ffffff" stroke="#245b85" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M84 82h21m-21 7h14" stroke="#83a8c4" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#83a8c4" stroke-width="2">
+      <path d="m250 78 27-4-11 23-16-19m16 19 22-5m-11-18 11 18" fill="none"/>
+      <g fill="#ffffff" stroke="#245b85">
+        <circle cx="250" cy="78" r="5"/><circle cx="277" cy="74" r="5"/>
+        <circle cx="266" cy="97" r="5"/><circle cx="288" cy="92" r="5"/>
+      </g>
+    </g>
+    <text x="95" y="123" font-size="18" fill="#245b85">LLM</text>
+    <text x="266" y="123" font-size="18" fill="#245b85">KG</text>
+    <text x="180" y="104" font-size="24" fill="#92a9bc">+</text>
+    <g fill="none" stroke="#92a9bc" stroke-width="1.6" stroke-linecap="round">
+      <path d="M95 144v10q0 8 8 8h154q9 0 9-8v-10"/>
+      <path d="M180 162v16" marker-end="url(#arrow)"/>
+    </g>
+    <rect x="53" y="187" width="254" height="36" rx="9" fill="#245b85"/>
+    <text x="180" y="211" font-size="18" fill="#ffffff">Academic planning</text>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="孙光宇参与的 DAVIS 交通感知系统：融合红外与可见光感知、交通行为识别和法规知识问答。">
+    <title>DAVIS 交通感知系统 | 孙光宇</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">跳至正文</a>
+    <header class="site-header">
+        <div class="page-container header-inner">
+            <a class="site-name" href="index.html">孙光宇 <span>Guangyu Sun</span></a>
+            <a href="index.html#projects">返回首页</a>
+        </div>
+    </header>
+    <main id="main" class="page-container">
+        <div class="page-heading">
+            <p class="eyebrow">Selected project</p>
+            <h1>DAVIS 交通感知系统</h1>
+            <p class="lead">穿云破雾——双光与 AI 驱动的天地协同道路交通感知系统</p>
+            <p class="page-meta">2025 全国大学生数字媒体科技作品及创意竞赛 · 全国总决赛一等奖</p>
+            <div class="inline-links">
+                <a href="http://8.221.99.246:2778/" target="_blank" rel="noopener noreferrer">访问在线演示</a>
+                <a href="#materials">查看项目材料</a>
+            </div>
+        </div>
+        <section class="content-section" aria-labelledby="background-title">
+            <h2 id="background-title">项目背景</h2>
+            <div class="prose">
+                <p>雨雾、夜间等低能见度场景给道路监测带来挑战。项目融合红外与可见光感知，通过图像增强、目标检测与多模态融合算法，识别车辆与道路情况，并将检测结果组织为可视化交通监测系统。</p>
+                <p>系统围绕交通异常事件、车辆目标与行为分析，结合大模型和法规知识库，提供从感知识别到信息解释的支持。</p>
+            </div>
+        </section>
+        <section class="content-section" aria-labelledby="contribution-title">
+            <h2 id="contribution-title">我的贡献</h2>
+            <div class="prose">
+                <p>负责 AI 模块的设计与实现，主要工作包括：</p>
+                <ul>
+                    <li>构建交通违章行为识别模型，实现闯红灯、逆行、违规变道等行为的自动检测。</li>
+                    <li>基于交通法规构建知识库，设计智能问答模块，支持违章类型、处罚标准与法规依据的查询和解释。</li>
+                </ul>
+            </div>
+        </section>
+        <section class="content-section" aria-labelledby="system-title">
+            <h2 id="system-title">系统组成</h2>
+            <div class="feature-grid">
+                <article>
+                    <h3>双光融合感知</h3>
+                    <p>通过可见光与红外热成像互补，面向夜间、雨雾等复杂场景开展目标检测与图像增强。</p>
+                    <p class="technology">Python · OpenCV · 双光融合</p>
+                </article>
+                <article>
+                    <h3>行为识别与问答</h3>
+                    <p>结合目标检测、轨迹分析与大模型语义理解，对交通行为进行识别，并关联法规知识。</p>
+                    <p class="technology">YOLO · DeepSeek · 知识库</p>
+                </article>
+                <article>
+                    <h3>可视化展示</h3>
+                    <p>汇集感知结果与分析信息，为交通事件、车辆目标及行为提供直观的展示入口。</p>
+                    <p class="technology">Vue.js · WebGIS · ECharts</p>
+                </article>
+            </div>
+        </section>
+        <section id="materials" class="content-section" aria-labelledby="materials-title">
+            <h2 id="materials-title">项目材料</h2>
+            <div class="figure-grid">
+                <figure>
+                    <a href="assets/images/project-davis.png" target="_blank" rel="noopener noreferrer" aria-label="查看完整项目说明截图">
+                        <img src="assets/images/project-davis.png" alt="DAVIS 项目说明截图，包含项目简介、核心特点与系统架构" loading="lazy" width="1302" height="885">
+                    </a>
+                    <figcaption>项目说明截图 · 点击查看原图</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/proofs/competition/digital-media-first.jpg" target="_blank" rel="noopener noreferrer" aria-label="查看全国总决赛一等奖证书">
+                        <img src="assets/proofs/competition/digital-media-first.jpg" alt="2025 全国大学生数字媒体科技作品及创意竞赛全国总决赛一等奖证书" loading="lazy" width="3508" height="2481">
+                    </a>
+                    <figcaption>全国总决赛一等奖证书 · 点击查看原图</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer page-container">
+        <p>&copy; 2026 孙光宇</p>
+        <a href="index.html#projects">返回代表项目</a>
+    </footer>
+</body>
+</html>
